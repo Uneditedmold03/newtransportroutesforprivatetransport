@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface RouteRepository extends JpaRepository<Route, Long> {
 
-    List<Route> findRoutesByStartEndTransportType(String start, String end, String transportType);
+    List<Route> findRoutesByStartAndEndAndTransportType(String start, String end, String transportType);
 
     //List<Route> findRoutesByStartEndTransportType(String start, String end, String transportType);
     //List<Route> findRoutesByStartAndEndAndOrderByTime(String start, String end, String transportType);

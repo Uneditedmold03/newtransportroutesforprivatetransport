@@ -13,7 +13,7 @@ public class RouteService {
     private RouteRepository routeRepository;
 
     public List<Route> getRoute(String start, String end, String transportType) {
-        List<Route> routes = routeRepository.findRoutesByStartEndTransportType(start, end, transportType);
+        List<Route> routes = routeRepository.findRoutesByStartAndEndAndTransportType(start, end, transportType);
         return routes;
     }
 
